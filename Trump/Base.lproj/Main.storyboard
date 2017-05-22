@@ -22,38 +22,51 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trump" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4H-Wm-Ucn">
-                                <rect key="frame" x="162.5" y="100" width="50" height="21"/>
+                                <rect key="frame" x="163" y="100" width="50" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcq-Lh-zyv">
-                                <rect key="frame" x="143" y="143" width="89" height="30"/>
-                                <state key="normal" title="PRESS HERE"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lIZ-4M-oZr">
+                                <rect key="frame" x="137" y="181" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="h0S-eV-SKH"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2V8-J3-qep">
+                                <rect key="frame" x="137" y="219" width="100" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdd-0n-SNf">
+                                <rect key="frame" x="150" y="137" width="75" height="30"/>
+                                <state key="normal" title="Press Here"/>
                                 <connections>
-                                    <action selector="PressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rzi-hf-F9R"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqc-sF-fJJ">
-                                <rect key="frame" x="130.5" y="195" width="114" height="30"/>
-                                <state key="normal" title="PRESS HERE 2.0"/>
-                                <connections>
-                                    <action selector="PressedButtonDos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ox-sO-PMj"/>
+                                    <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NZy-QG-WEg"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="bqc-sF-fJJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CVx-iR-5S9"/>
-                            <constraint firstItem="r4H-Wm-Ucn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NTw-3j-gEa"/>
-                            <constraint firstItem="bqc-sF-fJJ" firstAttribute="top" secondItem="qcq-Lh-zyv" secondAttribute="bottom" constant="22" id="VXY-tJ-Yx9"/>
-                            <constraint firstItem="qcq-Lh-zyv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dze-G4-cw7"/>
-                            <constraint firstItem="r4H-Wm-Ucn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="pXv-2o-HZe"/>
-                            <constraint firstItem="qcq-Lh-zyv" firstAttribute="top" secondItem="r4H-Wm-Ucn" secondAttribute="bottom" constant="22" id="rLG-Sr-dmb"/>
+                            <constraint firstItem="lIZ-4M-oZr" firstAttribute="top" secondItem="pdd-0n-SNf" secondAttribute="bottom" constant="14" id="2Sy-4p-aLe"/>
+                            <constraint firstItem="lIZ-4M-oZr" firstAttribute="leading" secondItem="2V8-J3-qep" secondAttribute="leading" id="2wm-tZ-I6p"/>
+                            <constraint firstItem="lIZ-4M-oZr" firstAttribute="trailing" secondItem="2V8-J3-qep" secondAttribute="trailing" id="Fqk-zQ-eLY"/>
+                            <constraint firstItem="pdd-0n-SNf" firstAttribute="centerX" secondItem="lIZ-4M-oZr" secondAttribute="centerX" id="HYj-fL-fDh"/>
+                            <constraint firstItem="pdd-0n-SNf" firstAttribute="top" secondItem="r4H-Wm-Ucn" secondAttribute="bottom" constant="16" id="PFa-ao-Jnj"/>
+                            <constraint firstItem="2V8-J3-qep" firstAttribute="top" secondItem="lIZ-4M-oZr" secondAttribute="bottom" constant="8" symbolic="YES" id="iUx-aI-esJ"/>
+                            <constraint firstItem="r4H-Wm-Ucn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="pjI-af-W4T"/>
+                            <constraint firstItem="r4H-Wm-Ucn" firstAttribute="centerX" secondItem="pdd-0n-SNf" secondAttribute="centerX" id="t96-Vv-tpb"/>
+                            <constraint firstItem="lIZ-4M-oZr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xwZ-Vf-JCH"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="Thelabel" destination="r4H-Wm-Ucn" id="K51-4O-NOo"/>
+                        <outlet property="text1" destination="lIZ-4M-oZr" id="7xM-o8-d5a"/>
+                        <outlet property="text2" destination="2V8-J3-qep" id="fh3-9d-Zno"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

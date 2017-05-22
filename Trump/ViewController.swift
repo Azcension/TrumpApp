@@ -4,7 +4,6 @@
 //
 //  Created by Addison Riddleberger on 5/21/17.
 //  Copyright © 2017 Addison Riddleberger. All rights reserved.
-//  HALLOOOOOO TRUMPY
 //
 
 import UIKit
@@ -12,18 +11,16 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var Thelabel: UILabel!
+    @IBOutlet weak var text1: UITextField!
+    @IBOutlet weak var text2: UITextField!
     
-    var tapcount = 0
-    
-    @IBAction func PressedButton(_ sender: Any) {
-        tapcount = tapcount + 1
-        print(tapcount)
+    @IBAction func Button(_ sender: Any) {
         
-        if tapcount >= 20 {
-            Thelabel.text = "You've tapped 10 times homie"
-        }
+        Thelabel.text = "Answer Is... \(Double(text1.text!)! * Double(text2.text!)!)"
         
     }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
