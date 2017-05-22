@@ -4,6 +4,7 @@
 //
 //  Created by Addison Riddleberger on 5/21/17.
 //  Copyright © 2017 Addison Riddleberger. All rights reserved.
+//  HALLOOOOOO TRUMPY
 //
 
 import UIKit
@@ -18,7 +19,7 @@ class ViewController: UIViewController {
         tapcount = tapcount + 1
         print(tapcount)
         
-        if tapcount >= 10 {
+        if tapcount >= 20 {
             Thelabel.text = "You've tapped 10 times homie"
         }
         
